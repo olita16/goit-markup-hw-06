@@ -42,7 +42,7 @@
           </ul>
         </nav>
         <address class="header-address">
-          <ul class="header-list list">
+          <ul class="header-list header-adress-list list">
             <li>
               <a class="header-contact link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -151,7 +151,8 @@
       <section class="solution-title-section">
         <div class="container solution-container">
           <h1 class="solution-hidden-title">
-            Effective Solutions for Your Business
+            Effective Solutions <br />
+            for Your Business
           </h1>
           <button class="solution-btn-title" type="button" data-modal-open>
             Order Service
@@ -221,29 +222,32 @@
           <ul class="photo-section-list list">
             <li class="photo-section-item">
               <img
-                srcset="/images/deskscreen-2x.jpg"
-                src="./images/deskscreen.jpg"
+                srcset="./images/deskscreen-min.png 1x, ./images/deskscreen-2x-min.png 2x"
+                src="./images/deskscreen-min.png"
                 alt="computer screen"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="photo-section-item">
               <img
-                srcset="/images/mobscreen-2x.jpg"
-                src="./images/mobscreen.jpg"
+                srcset="./images/mobscreen-min.png 1x, ./images/mobscreen-2x-min.png 2x"
+                src="./images/mobscreen-min.png"
                 alt="mobile screen"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
             <li class="photo-section-item">
               <img
-                srcset="/images/mobile-2x.jpg"
-                src="./images/mobile.jpg"
+                srcset="./images/mobile-min.png 1x, ./images/mobile-2x-min.png 2x"
+                src="./images/mobile-min.png"
                 alt="mobile phone"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -256,11 +260,12 @@
           <ul class="expert-section-list list">
             <li class="expert-team-item">
               <img
-                srcset="/images/mark-2x.jpg"
-                src="./images/mark.jpg"
+                srcset="./images/mark-min.png 1x, ./images/mark-2x-min.png 2x"
+                src="./images/mark-min.png"
                 alt="man mark"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="expert-text">
                 <h3 class="expert-team-title">Mark Guerrero</h3>
@@ -299,11 +304,12 @@
             </li>
             <li class="expert-team-item">
               <img
-                srcset="/images/tom-2x.jpg"
-                src="./images/tom.jpg"
+                srcset="./images/tom-min.png 1x, ./images/tom-2x-min.png 2x"
+                src="./images/tom-min.png"
                 alt="man tom"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="expert-text">
                 <h3 class="expert-team-title">Tom Ford</h3>
@@ -342,11 +348,12 @@
             </li>
             <li class="expert-team-item">
               <img
-                srcset="/images/camila-2x.jpg"
-                src="./images/camila.jpg"
+                srcset="./images/camila-min.png 1x, ./images/camila-2x-min.png 2x"
+                src="./images/camila-min.png"
                 alt="girl camila"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="expert-text">
                 <h3 class="expert-team-title">Camila Garcia</h3>
@@ -385,11 +392,12 @@
             </li>
             <li class="expert-team-item">
               <img
-                srcset="/images/daniel-2x.jpg"
-                src="./images/daniel.jpg"
+                srcset="./images/daniel-min.png 1x, ./images/daniel-2x-min.png 2x"
+                src="./images/daniel-min.png"
                 alt="man daniel"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="expert-text">
                 <h3 class="expert-team-title">Daniel Wilson</h3>
@@ -429,7 +437,7 @@
           </ul>
         </div>
       </section>
-      
+
       <section class="customers">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
@@ -654,6 +662,12 @@
         </form>
       </div>
     </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
     <script src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
   </body>
