@@ -105,7 +105,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 112px;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -956,6 +955,9 @@ img {
 
 /*----------TABLET CUSTOMERS SECTION---------------/* */
 
+/* .customers {
+  padding: 96px 0;
+} */
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .customers{
@@ -965,7 +967,11 @@ img {
 
   .customers-list {
     flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+    display: flex;
   }
+
   .customers-item {
     flex-basis: calc((100% - 48px) / 3);
   }
@@ -976,6 +982,7 @@ img {
 .customers {
   padding: 120px 0;
 }
+
 .customers-title {
   font-weight: 700;
   font-size: 36px;
@@ -985,6 +992,7 @@ img {
   margin-bottom: 72px;
   color: var(--navy-blue-color);
 }
+
 .customers-link {
   display: flex;
   justify-content: center;
@@ -1077,15 +1085,10 @@ img {
 
 .footer-under-title {
   color: var(--expert-section-background-color);
-  /* margin-top: 16px; */
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/* .text-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-} */
 
 footer .footer-logo {
   display: inline-block;
@@ -1148,7 +1151,6 @@ footer .footer-logo {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1362,8 +1364,6 @@ footer .footer-logo {
 }
 
 .review-form-input-wrapper {
-  /* margin-bottom: 8px; */
-  /* display: block; */
   position: relative;
 }
 
@@ -1454,14 +1454,6 @@ footer .footer-logo {
   color: var(--iris-btn-color);
 }
 
-.review-form-own-checkbox {
-  /* fill: transparent;
-  cursor: pointer;
-  padding: 3px;
-  border-radius: 2px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 8px; */
-}
 
 .review-form-checkbox:checked + .review-form-checkbox-label > .modal-check-box {
   fill: var(--expert-section-background-color);
